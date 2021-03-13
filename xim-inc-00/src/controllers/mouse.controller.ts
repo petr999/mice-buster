@@ -12,6 +12,7 @@ import {get, param, response, ResponseObject} from '@loopback/rest';
  * Constants
  */
 // Maximum number of seconds to delay the jump for lure
+const DELAY_SECONDS_MAX = 100
 
 /**
  * OpenAPI response for lure()
@@ -40,8 +41,6 @@ const LureResponse: ResponseObject = {
   },
 };
 
-
-
 export class MouseController {
   constructor() { }
 
@@ -50,7 +49,7 @@ export class MouseController {
   async lure(
     @param.path.integer('lureId') lureId: number,
   ): Promise<object> {
-    const delay: number = Math.round(100 * Math.random())
+    const delay: number = Math.round(DELAY_SECONDS_MAX * Math.random())
     const date = new Date()
     const rv = {
       delay, date, lureId,
