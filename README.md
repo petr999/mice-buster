@@ -17,11 +17,6 @@ Whenever dependencies in `package.json` are changed, run the following command:
 npm install
 ```
 
-To only install resolved dependencies in `package-lock.json`:
-
-```sh
-npm ci
-```
 You also need `docker-compose` to run this.
 
 ## Run the application
