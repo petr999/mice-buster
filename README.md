@@ -27,4 +27,10 @@ docker-compose up
 
 Open http://127.0.0.1:3000 in your browser. See the specs and a Swagger UI of a mouse microservice. Try to lure()
 
+[![Lured mouse](./public/img/mice-busters-mouse-lure-thumb.png)](./public/img/mice-busters-mouse-lure.png)
+
 Open http://127.0.0.1:3001 in your browser. See the specs and a Swagger UI of a cat microservice. Try get mouse()
+
+[![Timedout mouse](./public/img/mice-busters-cat-mouse-timedout-thumb.png)](./public/img/mice-busters-cat-mouse-timedout.png)
+
+[![Returned mouse](./public/img/mice-busters-cat-mouse-returned-thumb.png)](./public/img/mice-busters-cat-mouse-returned.png)
