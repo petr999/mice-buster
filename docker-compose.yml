@@ -8,6 +8,7 @@ services:
     volumes:
       - './mouse:/application'
       - './node_modules:/application/node_modules'
+      - './package.json:/application/package.json'
   cat:
     image: 'node:buster'
     command: [ "/bin/sh", "-c", "node /application/index.js; sleep infinity",  ]
@@ -18,3 +19,4 @@ services:
     volumes:
       - './cat:/application'
       - './node_modules:/application/node_modules'
+      - './package.json:/application/package.json'
