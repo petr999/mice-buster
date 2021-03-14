@@ -1,4 +1,4 @@
-# xim-inc-00
+# mixe-buster
 
 This application is about a cat who wnat to catch a mouse. Cat lures a mouse and waits for its timeout ( 3 seconds ). Mouse waits for random timeout ( up to 5 seconds ) and jumps for lure or doesn't based on a random wish.
 
