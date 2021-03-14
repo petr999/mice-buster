@@ -12,7 +12,7 @@ import {get, param, response, ResponseObject} from '@loopback/rest';
  * Constants
  */
 // Maximum number of seconds to delay the jump for lure
-const DELAY_SECONDS_MAX = 3
+const DELAY_SECONDS_MAX = 5
 
 /**
  * OpenAPI response for lure()
