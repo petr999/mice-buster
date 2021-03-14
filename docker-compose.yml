@@ -1,9 +1,10 @@
 version: '3'
 services:
-  xim-inc-00:
+  mouse:
     image: 'node:buster'
     command: [ "/bin/sh", "-c", "node /application/index.js; sleep infinity",  ]
     ports:
       - "3000:3000"
     volumes:
-      - './xim-inc-00:/application'
+      - './mouse:/application'
+      - './node_modules:/application/node_modules'
