@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "xim-inc-00",
+    "title": "xim-mouse-00",
     "version": "0.0.1",
-    "description": "xim-inc-00 app",
+    "description": "xim-mouse-00 app",
     "contact": {}
   },
   "paths": {
@@ -39,28 +39,6 @@
         ],
         "operationId": "MouseController.lure"
       }
-    },
-    "/ping": {
-      "get": {
-        "x-controller-name": "PingController",
-        "x-operation-name": "ping",
-        "tags": [
-          "PingController"
-        ],
-        "responses": {
-          "200": {
-            "description": "Ping Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PingResponse"
-                }
-              }
-            }
-          }
-        },
-        "operationId": "PingController.ping"
-      }
     }
   },
   "servers": [
@@ -82,30 +60,6 @@
           },
           "lureId": {
             "type": "number"
-          },
-          "headers": {
-            "type": "object",
-            "properties": {
-              "Content-Type": {
-                "type": "string"
-              }
-            },
-            "additionalProperties": true
-          }
-        }
-      },
-      "PingResponse": {
-        "type": "object",
-        "title": "PingResponse",
-        "properties": {
-          "greeting": {
-            "type": "string"
-          },
-          "date": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
           },
           "headers": {
             "type": "object",
