@@ -2,7 +2,7 @@ version: '3'
 services:
   mouse:
     image: 'node:buster'
-    command: [ "/bin/sh", "-c", "node /application/index.js; sleep infinity",  ]
+    command: [ "/bin/sh", "-c", "cd /application && npm run build && node dist/index.js; # sleep infinity",  ]
     ports:
       - "3000:3000"
     volumes:
@@ -11,7 +11,7 @@ services:
       - './package.json:/application/package.json'
   cat:
     image: 'node:buster'
-    command: [ "/bin/sh", "-c", "node /application/index.js; sleep infinity",  ]
+    command: [ "/bin/sh", "-c", "cd /application && npm run build && node dist/index.js; # sleep infinity",  ]
     ports:
       - "3001:3001"
     environment:
