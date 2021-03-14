@@ -8,3 +8,13 @@ services:
     volumes:
       - './mouse:/application'
       - './node_modules:/application/node_modules'
+  cat:
+    image: 'node:buster'
+    command: [ "/bin/sh", "-c", "node /application/index.js; sleep infinity",  ]
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+    volumes:
+      - './cat:/application'
+      - './node_modules:/application/node_modules'
